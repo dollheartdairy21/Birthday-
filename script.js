@@ -115,8 +115,6 @@ function celebrate(){
 }
 async function bootAnimation(){
 
-const messages=[
-
 const messages = [
 "Initializing BirthdayOS Kernel...",
 "Loading UI Engine...",
@@ -132,8 +130,6 @@ const messages = [
 "From: Bhumika 💙",
 "Decrypting Memories...",
 "ACCESS GRANTED ✅"
-];
-
 ];
 
 for(let i=0;i<messages.length;i++){
