@@ -81,7 +81,9 @@ async function runBoot(){
 
 }
 
-startBtn.onclick=runBoot;
+window.onload = () => {
+    setTimeout(runBoot, 1000);
+};
 function startConfetti() {
 
     const duration = 6000;
