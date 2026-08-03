@@ -303,7 +303,7 @@ transition:1s;
 
 }
 
-.bootLogo h1{
+.bootanimation: glowPulse 2s infinite;
 
 font-size:60px;
 
