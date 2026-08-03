@@ -1,4 +1,6 @@
-const terminal = document.getElementById("terminalText");
+const boot = document.getElementById("bootScreen");
+const fill = document.getElementById("loadingFill");
+const statusText = document.getElementById("bootStatus");const terminal = document.getElementById("terminalText");
 const birthdayCard = document.getElementById("birthdayCard");
 const replay = document.getElementById("replay");
 const terminalBox = document.querySelector(".terminal");
