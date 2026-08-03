@@ -113,7 +113,37 @@ function celebrate(){
     })();
 
 }
+async function bootAnimation(){
 
+const messages=[
+
+"Initializing Kernel...",
+"Loading System...",
+"Connecting Birthday Server...",
+"Decrypting Memories...",
+"Access Granted"
+
+];
+
+for(let i=0;i<messages.length;i++){
+
+statusText.textContent=messages[i];
+
+fill.style.width=((i+1)*20)+"%";
+
+await sleep(700);
+
+}
+
+boot.style.opacity="0";
+
+await sleep(900);
+
+boot.style.display="none";
+
+typeAnimation();
+
+}
 window.onload=()=>{
 
     setTimeout(typeAnimation,1000);
