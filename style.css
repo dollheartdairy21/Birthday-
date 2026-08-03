@@ -368,3 +368,24 @@ color:#bdeeff;
 letter-spacing:2px;
 
 }
+@keyframes glowPulse{
+
+0%{
+text-shadow:
+0 0 15px #00c8ff,
+0 0 30px #008cff;
+}
+
+50%{
+text-shadow:
+0 0 30px #00e5ff,
+0 0 60px #00bfff;
+}
+
+100%{
+text-shadow:
+0 0 15px #00c8ff,
+0 0 30px #008cff;
+}
+
+}
