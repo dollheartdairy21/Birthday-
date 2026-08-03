@@ -142,13 +142,13 @@ statusText.textContent=messages[i];
 
 fill.style.width=((i+1)*20)+"%";
 
-await sleep(700);
+await sleep(900);
 
 }
 
 boot.style.opacity="0";
 
-await sleep(700);
+await sleep(900);
 
 boot.style.display="none";
 
