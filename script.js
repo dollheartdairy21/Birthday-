@@ -117,11 +117,22 @@ async function bootAnimation(){
 
 const messages=[
 
-"Initializing Kernel...",
-"Loading System...",
+const messages = [
+"Initializing BirthdayOS Kernel...",
+"Loading UI Engine...",
+"Checking Internet Connection...",
 "Connecting Birthday Server...",
+"Downloading Cake Package...",
+"Loading Gifts...",
+"Checking Happiness...",
+"Scanning User Database...",
+"User Found: Chirag",
+"Verifying Age: 19",
+"Receiving Secret Message...",
+"From: Bhumika 💙",
 "Decrypting Memories...",
-"Access Granted"
+"ACCESS GRANTED ✅"
+];
 
 ];
 
