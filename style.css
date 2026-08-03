@@ -1,0 +1,239 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'JetBrains Mono', monospace;
+}
+
+body{
+background:#05070d;
+color:#6ec8ff;
+overflow:hidden;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+#stars{
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(white 1px, transparent 1px);
+background-size:45px 45px;
+opacity:.18;
+animation:moveStars 40s linear infinite;
+}
+
+@keyframes moveStars{
+from{
+transform:translateY(0);
+}
+to{
+transform:translateY(500px);
+}
+}
+
+.terminal{
+
+width:90%;
+max-width:900px;
+
+background:rgba(10,15,30,.75);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(0,200,255,.35);
+
+border-radius:18px;
+
+box-shadow:
+0 0 25px rgba(0,150,255,.45),
+0 0 80px rgba(0,120,255,.15);
+
+overflow:hidden;
+}
+
+.header{
+
+display:flex;
+align-items:center;
+
+gap:10px;
+
+padding:15px 20px;
+
+background:#111827;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+color:white;
+}
+
+.dot{
+
+width:12px;
+height:12px;
+border-radius:50%;
+}
+
+.red{
+background:#ff5f56;
+}
+
+.yellow{
+background:#ffbd2e;
+}
+
+.green{
+background:#27c93f;
+}
+
+#typing{
+
+padding:25px;
+
+min-height:350px;
+
+font-size:18px;
+
+line-height:1.7;
+
+white-space:pre-wrap;
+
+text-shadow:
+0 0 10px #00aaff;
+}
+
+#typing::after{
+content:"█";
+animation:blink .8s infinite;
+}
+
+@keyframes blink{
+50%{
+opacity:0;
+}
+}
+
+button{
+
+margin:25px;
+
+padding:15px 40px;
+
+border:none;
+
+border-radius:10px;
+
+background:#0099ff;
+
+color:white;
+
+font-size:17px;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+button:hover{
+
+background:#00bbff;
+
+transform:scale(1.05);
+
+box-shadow:0 0 20px #00aaff;
+}
+
+#surprise{
+
+display:none;
+
+text-align:center;
+
+animation:fade 1.2s ease;
+}
+
+#surprise h1{
+
+font-size:55px;
+
+color:#00bfff;
+
+text-shadow:
+0 0 25px #00c8ff;
+}
+
+#surprise h2{
+
+margin-top:15px;
+
+color:white;
+}
+
+#surprise p{
+
+margin-top:20px;
+
+font-size:20px;
+
+line-height:1.8;
+}
+
+.message{
+
+max-width:700px;
+
+margin:35px auto;
+
+font-size:22px;
+}
+
+.cake{
+
+font-size:90px;
+
+margin:35px;
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:scale(.9);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+canvas{
+
+position:fixed;
+top:0;
+left:0;
+pointer-events:none;
+}
+
+@media(max-width:700px){
+
+#typing{
+font-size:15px;
+}
+
+#surprise h1{
+font-size:34px;
+}
+
+.message{
+font-size:18px;
+}
+
+button{
+width:85%;
+}
+}
