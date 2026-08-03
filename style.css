@@ -220,7 +220,24 @@ pointer-events:none;
 }
 
 @media(max-width:700px){
+@media(max-width:700px){
 
+#typing{
+font-size:15px;
+}
+
+#surprise h1{
+font-size:34px;
+}
+
+.message{
+font-size:18px;
+}
+
+button{
+width:85%;
+}
+}
 #typing{
 font-size:15px;
 }
