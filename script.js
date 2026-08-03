@@ -146,7 +146,9 @@ typeAnimation();
 }
 window.onload=()=>{
 
-    setTimeout(typeAnimation,1000);
+bootAnimation();
+
+}
 
 }
 
