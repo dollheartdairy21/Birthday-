@@ -74,7 +74,7 @@ async function runBoot(){
     await new Promise(r=>setTimeout(r,1000));
 
     document.querySelector(".terminal").style.display="none";
-
+document.body.style.animation = "glitch 0.3s 3";
     surprise.style.display="block";
 
     startConfetti();
