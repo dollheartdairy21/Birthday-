@@ -148,7 +148,7 @@ await sleep(700);
 
 boot.style.opacity="0";
 
-await sleep(900);
+await sleep(700);
 
 boot.style.display="none";
 
